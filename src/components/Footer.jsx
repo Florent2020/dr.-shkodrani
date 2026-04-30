@@ -129,10 +129,16 @@ function Footer() {
               deserve.
             </Text>
             <Socials>
-              <a href="/" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/Dr.ShkodraniOfficial/"
+                aria-label="Facebook"
+              >
                 <FiFacebook />
               </a>
-              <a href="/" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/drshkodrani/"
+                aria-label="Instagram"
+              >
                 <FiInstagram />
               </a>
             </Socials>
