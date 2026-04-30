@@ -36,6 +36,10 @@ const Photo = styled.img`
   box-shadow: 0 20px 44px rgba(8, 28, 48, 0.14);
 `;
 
+const HeroAbout = styled.div`
+  width: min(1120px, calc(100% - 44px));
+`;
+
 const Note = styled.div`
   margin-top: 28px;
   padding: 22px 24px;
@@ -123,7 +127,7 @@ function About() {
         <Container>
           <StoryGrid>
             <Photo src={images.clinic} alt="Clinic interior" />
-            <div>
+            <HeroAbout>
               <Eyebrow>Our Story</Eyebrow>
               <Heading>A Clinic Built on Trust & Compassion</Heading>
               <Text>
@@ -142,7 +146,7 @@ function About() {
                 <FiHeart /> "We focus on pain-free treatments because your
                 comfort matters most to us."
               </Note>
-            </div>
+            </HeroAbout>
           </StoryGrid>
         </Container>
       </Section>

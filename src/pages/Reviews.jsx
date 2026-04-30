@@ -16,6 +16,10 @@ import {
 import { images, reviews } from "../data/siteData";
 import { Link } from "react-router-dom";
 
+const HeroReviews = styled.div`
+  width: min(1120px, calc(100% - 44px));
+`;
+
 const RatingBox = styled.div`
   width: min(650px, 100%);
   margin: 0 auto 95px;
@@ -103,10 +107,10 @@ function Reviews() {
       exit={{ opacity: 0 }}
     >
       <PageHero $image={images.team}>
-        <div>
+        <HeroReviews>
           <h1>Patient Reviews</h1>
           <p>Real stories from real patients</p>
-        </div>
+        </HeroReviews>
       </PageHero>
       <Section>
         <Container>

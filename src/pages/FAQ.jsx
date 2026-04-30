@@ -16,6 +16,10 @@ import {
 import { images, faqs } from "../data/siteData";
 import { Link } from "react-router-dom";
 
+const HeroFAQ = styled.div`
+  width: min(1120px, calc(100% - 44px));
+`;
+
 const List = styled.div`
   width: min(700px, 100%);
   margin: 0 auto;
@@ -66,10 +70,10 @@ function FAQ() {
       exit={{ opacity: 0 }}
     >
       <PageHero $image={images.clinic}>
-        <div>
+        <HeroFAQ>
           <h1>Frequently Asked Questions</h1>
           <p>Find answers to common questions about our services</p>
-        </div>
+        </HeroFAQ>
       </PageHero>
       <Section>
         <Container>
