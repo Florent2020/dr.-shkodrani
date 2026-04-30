@@ -117,17 +117,17 @@ function About() {
       exit={{ opacity: 0 }}
     >
       <PageHero $image={images.clinic}>
-        <div>
+        <HeroAbout>
           <h1>About Klinika Dentare Dr. Shkodrani</h1>
           <p>Meet the team behind your healthiest smile</p>
-        </div>
+        </HeroAbout>
       </PageHero>
 
       <Section>
         <Container>
           <StoryGrid>
             <Photo src={images.clinic} alt="Clinic interior" />
-            <HeroAbout>
+            <div>
               <Eyebrow>Our Story</Eyebrow>
               <Heading>A Clinic Built on Trust & Compassion</Heading>
               <Text>
@@ -146,7 +146,7 @@ function About() {
                 <FiHeart /> "We focus on pain-free treatments because your
                 comfort matters most to us."
               </Note>
-            </HeroAbout>
+            </div>
           </StoryGrid>
         </Container>
       </Section>
