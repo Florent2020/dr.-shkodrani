@@ -89,7 +89,7 @@ export const GhostButton = styled(Button)`
 
 export const PageHero = styled.section`
   position: relative;
-  min-height: 380px;
+  min-height: 480px;
   display: grid;
   place-items: center;
   text-align: center;
