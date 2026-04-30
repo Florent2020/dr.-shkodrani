@@ -124,7 +124,7 @@ const AboutGrid = styled.div`
 `;
 
 const ImageBox = styled.div`
-  min-height: 800px;
+  min-height: 700px;
   border-radius: 18px;
   background: url(${images.doctor}) center/cover;
   box-shadow: 0 18px 40px rgba(10, 32, 55, 0.11);
@@ -416,7 +416,7 @@ function Home() {
           <AboutGrid>
             <ImageBox>
               <Experience>
-                <strong>15+</strong>
+                <strong>20+</strong>
                 <span>Years of Experience</span>
               </Experience>
             </ImageBox>

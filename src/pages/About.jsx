@@ -57,6 +57,10 @@ const Dentist = styled.div`
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
+
+  img {
+    height: 500px !important;
+  }
 `;
 
 const List = styled.div`
@@ -123,7 +127,7 @@ function About() {
               <Eyebrow>Our Story</Eyebrow>
               <Heading>A Clinic Built on Trust & Compassion</Heading>
               <Text>
-                Klinika Dentare Dr. Shkodrani was founded in 2011 with a simple
+                Klinika Dentare Dr. Shkodrani was founded in 2004 with a simple
                 mission: to provide the highest quality dental care in a warm,
                 welcoming environment. Over the years, we've grown from a small
                 practice to one of Mitrovica's most trusted dental clinics.
@@ -158,7 +162,7 @@ function About() {
             <Photo
               src={images.doctor}
               alt="Doctor"
-              style={{ height: "560px" }}
+              style={{ height: "650px" }}
             />
             <List>
               <Item>

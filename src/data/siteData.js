@@ -33,7 +33,7 @@ export const images = {
 };
 
 export const stats = [
-  ["15+", "Years Experience"],
+  ["20+", "Years Experience"],
   ["10,000+", "Happy Patients"],
   ["Certified", "Licensed Professionals"],
   ["100%", "Safe & Sterile"],
