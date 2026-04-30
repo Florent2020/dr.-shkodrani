@@ -16,6 +16,10 @@ import {
 } from "../components/shared";
 import { images, services } from "../data/siteData";
 
+const HeroServices = styled.div`
+  width: min(1120px, calc(100% - 44px));
+`;
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -67,10 +71,10 @@ function Services() {
       exit={{ opacity: 0 }}
     >
       <PageHero $image={images.clinic}>
-        <div>
+        <HeroServices>
           <h1>Our Services</h1>
           <p>Comprehensive dental care tailored to your needs</p>
-        </div>
+        </HeroServices>
       </PageHero>
       <Section>
         <Container>

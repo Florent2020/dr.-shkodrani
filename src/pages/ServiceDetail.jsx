@@ -11,6 +11,10 @@ import {
 } from "../components/shared";
 import { services } from "../data/siteData";
 
+const HeroDetailServices = styled.div`
+  width: min(1120px, calc(100% - 44px));
+`;
+
 const Layout = styled.div`
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -97,9 +101,20 @@ const Box = styled.div`
   }
   p,
   a {
-    color: #58728c;
-    line-height: 1.6;
+    display: flex;
+    background: #fff;
+    color: #55708c;
+    border-color: #fff;
+    align-content: center;
+    font-size: 0.875rem;
   }
+
+  .detail__button {
+    background-color: #168bdc;
+    text-align: center;
+    color: #fff;
+  }
+
   a {
     display: block;
     margin: 18px 0;
@@ -115,10 +130,10 @@ function ServiceDetail() {
       exit={{ opacity: 0 }}
     >
       <PageHero $image={service.image}>
-        <div>
+        <HeroDetailServices>
           <h1>{service.title} in Mitrovica</h1>
           <p>{service.text}</p>
-        </div>
+        </HeroDetailServices>
       </PageHero>
       <Section>
         <Container>
@@ -181,7 +196,7 @@ function ServiceDetail() {
                   Final price depends on your specific treatment plan. Book a
                   consultation for an accurate estimate.
                 </p>
-                <Button as={Link} to="/book">
+                <Button as={Link} to="/book" className="detail__button">
                   <FiCalendar /> Book Now
                 </Button>
               </Box>
