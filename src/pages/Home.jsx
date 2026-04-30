@@ -123,6 +123,11 @@ const ImageBox = styled.div`
   background: url(${images.doctor}) center/cover;
   box-shadow: 0 18px 40px rgba(10, 32, 55, 0.11);
   position: relative;
+
+  @media (max-width: 650px) {
+    min-height: 450px;
+    background-position: top;
+  }
 `;
 
 const Experience = styled.div`
