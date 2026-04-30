@@ -48,7 +48,7 @@ const Hero = styled.section`
     min-height: 760px;
     padding-top: 150px;
     @media (max-width: 760px) {
-      background-position-x: -80% !important;
+      background-position-x: -70% !important;
     }
   }
 `;
