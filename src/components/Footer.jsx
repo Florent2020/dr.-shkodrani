@@ -9,7 +9,7 @@ import {
   FiMapPin,
   FiPhone,
 } from "react-icons/fi";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import { clinic, services } from "../data/siteData";
 
 const Foot = styled.footer`
@@ -43,8 +43,11 @@ const Brand = styled.div`
   gap: 10px;
   color: #fff;
   font-family: "Playfair Display", serif;
-  font-size: 1.45rem;
-  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.08;
+  opacity: 1;
+  font-weight: 700;
+  letter-spacing: 0.4px;
 
   img {
     width: 42px;
@@ -56,7 +59,7 @@ const Brand = styled.div`
 
 const Text = styled.p`
   margin: 18px 0;
-  color: #bfd0df;
+  color: #fff9;
   line-height: 1.7;
   font-size: 0.875rem;
 `;
@@ -88,7 +91,7 @@ const Col = styled.div`
     display: flex;
     font-size: 0.875rem;
     gap: 10px;
-    color: #c3d2df;
+    color: #fff9;
     margin: 0 0 13px;
     line-height: 1.4;
   }
@@ -116,7 +119,9 @@ function Footer() {
           <div>
             <Brand>
               <img src={logo} alt="Klinika Dentare Dr. Shkodrani" />
-              <span>Klinika Dentare Dr. Shkodrani</span>
+              <span>
+                Klinika Dentare <br /> Dr. Shkodrani
+              </span>
             </Brand>
             <Text>
               Trusted dental care in Mitrovica. We combine modern technology
