@@ -115,6 +115,12 @@ const AboutGrid = styled.div`
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: 900px) {
+    br {
+      display: none;
+    }
+  }
 `;
 
 const ImageBox = styled.div`
@@ -417,7 +423,7 @@ function Home() {
             <div>
               <Eyebrow>About Us</Eyebrow>
               <Heading>
-                We Focus on <Accent>Pain-Free</Accent>
+                We Focus on <Accent>Pain-Free </Accent>
                 <br />
                 Treatments
               </Heading>
